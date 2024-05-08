@@ -1,0 +1,141 @@
+:root {
+  --green: #009c41;
+  --green-hover: rgb(0, 183, 82);
+  --background: rgb(215, 255, 232);
+  --light-text: rgb(215, 255, 211);
+  --dark-text: rgb(0, 103, 3);
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: var(--green);
+  position: sticky;
+  top: 0;
+  transition: background-color 0.2s ease;
+  z-index: 1;
+}
+
+.navigation a {
+  display: block;
+  width: 100%;
+  padding: 16px 0px 16px 30px;
+
+  text-decoration: none;
+  color: var(--light-text);
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.navigation a:hover:not(.active) {
+  background-color: var(--green-hover);
+}
+
+.navigation a.active {
+  background-color: var(--green-hover);
+}
+
+h1 {
+  color: var(--dark-text);
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 70;
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.prezentacija {
+  background-color: rgb(50, 85, 66);
+  color: var(--light-text);
+  position: relative;
+  width: 40%;
+  padding: 16px;
+  border-radius: 20px;
+  font-size: 20;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.levo {
+  left: 10%;
+  right: 50%;
+}
+
+.desno {
+  left: 50%;
+  right: 10%;
+}
+
+.prezentacija img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: var(--green);
+}
+
+button:hover {
+  background-color: var(--green-hover);
+}
+
+.kupikozu {
+  width: 30%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  color: var(--light-text);
+  font-size: 25;
+  font-weight: 1000;
+}
+
+.kupikozucontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+.spacing {
+  height: 5%;
+}
+
+.footer {
+  height: 10%;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+}
+
+#goatanimation {
+  left: -50%;
+  right: 100%;
+  top: 0;
+  bottom: 100%;
+  width: 200%;
+  position: fixed;
+  z-index: 2;
+  visibility: hidden;
+}
