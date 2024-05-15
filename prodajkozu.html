@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koze BG - Prodaj Kozu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="index.html">Početna</a></li>
+      <li><a class="active" href="#">Prodajte kozu</a></li>
+      <li><a href="kupikozu.html">Kupite kozu</a></li>
+      <li><a href="o_nama.html">O nama</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <h1>PRODAJ KOZU</h1>
+    <p class="description">Poboljsaj nekome dan.</p>
+    <div class="formContainer">
+      <form>
+        <label for="ime">Ime koze</label>
+        <input id="ime" type="text" name="ime" /><br />
+        <label for="pol">Pol koze</label>
+        <input id="pol" type="text" name="pol" /><br />
+        <label for="boja">Boja koze</label>
+        <input id="boja" type="text" name="boja" /><br />
+        <label for="tezina">Tezina koze</label>
+        <input id="tezina" type="text" name="tezina" /><br />
+        <label for="iq">IQ koze</label>
+        <input id="iq" type="text" name="iq" /><br />
+        <label for="brzina">Brzina koze</label>
+        <input id="brzina" type="text" name="brzina" /><br />
+        <label for="duzinaRogova">Duzina rogova koze (cm)</label>
+        <input id="duzinaRogova" type="text" name="duzinaRogova" /><br />
+        <label for="slika">URL slike koze</label>
+        <input id="slika" type="text" name="slika" /><br />
+        <label for="cena">Cena koze (€)</label>
+        <input id="cena" type="text" name="cena" /><br />
+        <button id="PRODAJ" type="button" onclick="submitujKozu()">PRODAJ KOZU</button>
+      </form>
+    </div>
+    <div class="footer">Bogdan Jocic 6135</div>
+    <div class="footerspace"></div>
+  </body>
+</html>
