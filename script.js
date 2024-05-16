@@ -78,17 +78,7 @@ function kupiKozu(ime) {
 function submitujKozu() {
   console.log("submitovao sam kozu");
   let koza = {};
-  for (let prop of [
-    "ime",
-    "boja",
-    "pol",
-    "tezina",
-    "iq",
-    "duzinaRogova",
-    "brzina",
-    "slika",
-    "cena",
-  ]) {
+  for (let prop of ["ime", "boja", "pol", "tezina", "iq", "duzinaRogova", "brzina", "slika", "cena"]) {
     koza[prop] = document.getElementById(prop).value;
     document.getElementById(prop).value = "";
   }
@@ -128,4 +118,24 @@ function napraviKoze() {
   ];
 
   localStorage.setItem("koze", JSON.stringify(koze));
+}
+
+let zaposleni = [];
+
+function napraviHoverZaposlene() {
+  zaposleni = document.getElementsByClassName("zaposlen");
+  for (let zaposlen of zaposleni) {
+    zaposlen.onmouseover = function () {
+      for (let z of zaposleni) {
+        if (z != zaposlen) {
+          z.style["filter"] = "brightness(50%)";
+        }
+      }
+    };
+    zaposlen.onmouseout = function () {
+      for (let z of zaposleni) {
+        z.style["filter"] = "brightness(100%)";
+      }
+    };
+  }
 }

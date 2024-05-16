@@ -14,8 +14,7 @@ body {
   background-attachment: fixed;
   background-position: 50%;
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .navigation {
@@ -245,9 +244,142 @@ form {
   background-color: var(--background);
   border-radius: 20px;
   border: 8px solid var(--card-background);
-  padding: 10px;
-  width: calc(160px + 30%);
+  padding: 32px;
+  left: 20%;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  font-size: 4.6vh;
+  position: absolute;
 }
+
+.doddeo {
+  position: absolute;
+  left: 0;
+  right: 80%;
+  bottom: 10%;
+  top: 50%;
+}
+
+.doddeo img {
+  width: 100%;
+  height: 100%;
+}
+
 .onama {
   text-shadow: 2px;
+}
+
+header {
+  width: 100%;
+  background-color: var(--background);
+  text-align: center;
+  height: 10%;
+  font-size: 8vh;
+  color: var(--dark-text);
+}
+
+.navigation2 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 80%;
+  bottom: 50%;
+  margin: 0;
+}
+
+.navigation.dva {
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 80%;
+  top: 10%;
+  bottom: 50%;
+  flex-direction: column;
+  background-color: #009c41;
+  height: 40%;
+}
+
+.navigation.dva li {
+  height: 14%;
+}
+
+.zaposleni {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.zaposlen {
+  width: 20%;
+  color: var(--light-text);
+  text-align: center;
+}
+
+.zaposlen img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.noscroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+@keyframes delatnoost {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes delcc {
+  0% {
+    transform: skewX(-40deg);
+  }
+  50% {
+    transform: skewX(40deg);
+  }
+  100% {
+    transform: skewX(-40deg);
+  }
+}
+
+.delatnost {
+  position: absolute;
+  top: 20%;
+  margin: 0;
+  display: block;
+  text-align: center;
+  animation: delatnoost 1s infinite linear;
+  -webkit-text-stroke: 3px var(--light-text);
+}
+
+.delc {
+  position: absolute;
+  top: 50%;
+  width: 97%;
+  text-align: center;
+  font-size: 30;
+  -webkit-text-stroke: 1px var(--light-text);
+  animation: delcc 1s infinite ease-in-out;
+}
+
+#koontakt {
+  width: 100%;
+}
+
+.rezultatContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#rezultat {
+  color: var(--light-text);
 }
